@@ -74,3 +74,5 @@ def run_training(model, optimizer, loss_function, train_loader, test_loader, epo
         t.set_description("Current Loss: train = %.3g, validation = %.3g)" % (train_loss, valid_loss))
         t.refresh() 
 
+    return train_losses, valid_losses
+

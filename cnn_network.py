@@ -2,7 +2,9 @@ from torch import nn
 import torch
 
 class CNN(nn.Module):
-    """This class implements a CNN with GradCAM"""
+    """This class implements a CNN with GradCAM
+    TODO: for now this class is only applicable for binary classification, it should be adapted to multiclass classification too.
+    """
     def __init__(self, input_shape):
         super().__init__()
         
